@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 100vh;
+    width: 740px;
+    height: 600px;
+    border: 5px solid black;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: rotater;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotater{
+    0%{
+        transform: translateX(0) translateY(0);
+    }
+   25%{
+    transform: translateX(630px) ;
+    background-color: pink;
+   }
+   50%{
+    transform: translateY(490px) translateX(630px) ;
+    background-color: black;
+   }
+   75%{
+    transform: translateY(490px)  translateX(0);
+    background-color: yellow;
+   }
+   100%{
+    transform: translateY(0) translateX(0);
+    background-color: red;
+   }
+}
